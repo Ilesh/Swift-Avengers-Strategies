@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Alcohol_TOPS.ttf">
+            <string>Alcohol_TOPS</string>
+        </array>
+        <array key="Proxima Nova Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+        <array key="Proxima_Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NotificationView" customModule="Boozetastic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="egc-bU-Xtl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrr-fw-hnQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfS-WM-S9a" customClass="IPAutoScalingButton" customModule="Boozetastic" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="117" width="159" height="43"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="12"/>
+                            <state key="normal" title="CANCEL"/>
+                            <connections>
+                                <action selector="btnCancelClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="7jL-yz-aSr"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Enable/Disable receiving the notifications" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syH-lC-nLT">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="Wwe-5b-ly8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5W-mJ-P7R" customClass="IPAutoScalingButton" customModule="Boozetastic" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="26" width="320" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Push Notifications">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnPushClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="p89-ew-Lmj"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjG-Wk-Pbe" customClass="IPAutoScalingLabel" customModule="Boozetastic" customModuleProvider="target">
+                            <rect key="frame" x="264" y="26" width="46" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="KjG-Wk-Pbe" secondAttribute="height" multiplier="42:41" id="ZLd-QW-SIc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Alcohol_TOPS" family="Alcohol_TOPS" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHv-h2-K3L" customClass="IPAutoScalingButton" customModule="Boozetastic" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="71" width="320" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Email Notifications">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnEmailClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="jk9-Ff-yf3"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvA-2r-K2U" customClass="IPAutoScalingLabel" customModule="Boozetastic" customModuleProvider="target">
+                            <rect key="frame" x="264" y="71" width="46" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="RvA-2r-K2U" secondAttribute="height" multiplier="42:41" id="bWA-6z-iiO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Alcohol_TOPS" family="Alcohol_TOPS" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wma-Dm-8ok" customClass="IPAutoScalingButton" customModule="Boozetastic" customModuleProvider="target">
+                            <rect key="frame" x="161" y="117" width="159" height="43"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="12"/>
+                            <state key="normal" title="OK"/>
+                            <connections>
+                                <action selector="btnSaveClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="EoU-KS-zHL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="rfS-WM-S9a" secondAttribute="bottom" id="1I3-ph-gUG"/>
+                        <constraint firstItem="hHv-h2-K3L" firstAttribute="leading" secondItem="yrr-fw-hnQ" secondAttribute="leading" id="6Xo-5w-gky"/>
+                        <constraint firstItem="Wma-Dm-8ok" firstAttribute="top" secondItem="rfS-WM-S9a" secondAttribute="top" id="7A5-sI-qTW"/>
+                        <constraint firstItem="Wma-Dm-8ok" firstAttribute="height" secondItem="rfS-WM-S9a" secondAttribute="height" id="8je-qZ-bAQ"/>
+                        <constraint firstItem="Wma-Dm-8ok" firstAttribute="leading" secondItem="rfS-WM-S9a" secondAttribute="trailing" constant="2" id="CfW-vU-dEq"/>
+                        <constraint firstItem="A5W-mJ-P7R" firstAttribute="height" secondItem="hHv-h2-K3L" secondAttribute="height" id="EzR-R7-tn4"/>
+                        <constraint firstItem="KjG-Wk-Pbe" firstAttribute="top" secondItem="A5W-mJ-P7R" secondAttribute="top" id="GPe-IH-2xs"/>
+                        <constraint firstItem="hHv-h2-K3L" firstAttribute="height" secondItem="yrr-fw-hnQ" secondAttribute="height" multiplier="42:150" id="HBX-I9-Xy9"/>
+                        <constraint firstItem="KjG-Wk-Pbe" firstAttribute="bottom" secondItem="A5W-mJ-P7R" secondAttribute="bottom" id="HGE-aK-h3L"/>
+                        <constraint firstAttribute="trailing" secondItem="Wma-Dm-8ok" secondAttribute="trailing" id="HVP-6j-51q"/>
+                        <constraint firstItem="KjG-Wk-Pbe" firstAttribute="trailing" secondItem="A5W-mJ-P7R" secondAttribute="trailing" constant="-10" id="Jii-G5-yum"/>
+                        <constraint firstItem="syH-lC-nLT" firstAttribute="leading" secondItem="yrr-fw-hnQ" secondAttribute="leading" id="K2C-5Y-fvF"/>
+                        <constraint firstItem="A5W-mJ-P7R" firstAttribute="leading" secondItem="hHv-h2-K3L" secondAttribute="leading" id="MhL-0l-tJv"/>
+                        <constraint firstItem="rfS-WM-S9a" firstAttribute="top" secondItem="hHv-h2-K3L" secondAttribute="bottom" constant="1" id="QIO-WA-6RG"/>
+                        <constraint firstItem="RvA-2r-K2U" firstAttribute="trailing" secondItem="hHv-h2-K3L" secondAttribute="trailing" constant="-10" id="TY3-yk-1Vw"/>
+                        <constraint firstItem="syH-lC-nLT" firstAttribute="top" secondItem="yrr-fw-hnQ" secondAttribute="top" id="Tv5-Xs-5QP"/>
+                        <constraint firstAttribute="trailing" secondItem="hHv-h2-K3L" secondAttribute="trailing" id="V9i-L1-SCk"/>
+                        <constraint firstAttribute="trailing" secondItem="syH-lC-nLT" secondAttribute="trailing" id="ckp-O7-f9i"/>
+                        <constraint firstItem="Wma-Dm-8ok" firstAttribute="width" secondItem="rfS-WM-S9a" secondAttribute="width" id="eNS-SB-F5D"/>
+                        <constraint firstItem="A5W-mJ-P7R" firstAttribute="top" secondItem="syH-lC-nLT" secondAttribute="bottom" constant="1" id="gF7-Qo-KPJ"/>
+                        <constraint firstItem="A5W-mJ-P7R" firstAttribute="trailing" secondItem="hHv-h2-K3L" secondAttribute="trailing" id="gat-66-lkv"/>
+                        <constraint firstItem="rfS-WM-S9a" firstAttribute="leading" secondItem="yrr-fw-hnQ" secondAttribute="leading" id="m5C-6v-VT9"/>
+                        <constraint firstItem="RvA-2r-K2U" firstAttribute="top" secondItem="hHv-h2-K3L" secondAttribute="top" id="mVk-Q1-RZo"/>
+                        <constraint firstItem="hHv-h2-K3L" firstAttribute="top" secondItem="A5W-mJ-P7R" secondAttribute="bottom" id="qSB-v3-X1f"/>
+                        <constraint firstItem="RvA-2r-K2U" firstAttribute="bottom" secondItem="hHv-h2-K3L" secondAttribute="bottom" id="zNZ-wW-oeL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="egc-bU-Xtl" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4hn-XF-hVo"/>
+                <constraint firstItem="egc-bU-Xtl" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="5ro-EH-1ij"/>
+                <constraint firstItem="yrr-fw-hnQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7LX-ie-YZx"/>
+                <constraint firstItem="egc-bU-Xtl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BXr-Ml-VaI"/>
+                <constraint firstItem="yrr-fw-hnQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="KRn-ZQ-6tp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="egc-bU-Xtl" secondAttribute="trailing" id="Wwi-Qa-ne3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yrr-fw-hnQ" secondAttribute="trailing" id="iPi-hO-yhD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yrr-fw-hnQ" secondAttribute="bottom" id="rY5-83-S9N"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnCancle" destination="rfS-WM-S9a" id="XOt-JP-wMP"/>
+                <outlet property="btnEmailNotification" destination="hHv-h2-K3L" id="5Cm-jh-ujT"/>
+                <outlet property="btnPushnotification" destination="A5W-mJ-P7R" id="7dT-Nd-amb"/>
+                <outlet property="btnSave" destination="Wma-Dm-8ok" id="abT-dD-Hbu"/>
+                <outlet property="lblDiscr" destination="syH-lC-nLT" id="Kr8-d7-ybX"/>
+                <outlet property="lblEmailIcon" destination="RvA-2r-K2U" id="7Ua-0N-3gS"/>
+                <outlet property="lblPushIcon" destination="KjG-Wk-Pbe" id="oeq-Jb-IuP"/>
+            </connections>
+            <point key="canvasLocation" x="-84" y="384.5"/>
+        </view>
+    </objects>
+</document>

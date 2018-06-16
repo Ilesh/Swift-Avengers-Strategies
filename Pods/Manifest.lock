@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.7.1)
+  - DropDown (2.3.1)
+  - IQKeyboardManagerSwift (5.0.8)
+  - ISMessages (1.2)
+  - Kingfisher (4.7.0)
+  - SpinKit (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DropDown
+  - IQKeyboardManagerSwift
+  - ISMessages
+  - Kingfisher (~> 4.0)
+  - SpinKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DropDown
+    - IQKeyboardManagerSwift
+    - ISMessages
+    - Kingfisher
+    - SpinKit
+
+SPEC CHECKSUMS:
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  DropDown: 20499c7b2731b0d21609af924e47c7677a2be50d
+  IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
+  ISMessages: d39098b48672813d69d30f44da06260b9920fed4
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
+  SpinKit: 65906a8b534a4e14cbfd3f8b0b6c329131faef4a
+
+PODFILE CHECKSUM: c25594eda4c8f5b92cc0c850a686e6c1302c95d1
+
+COCOAPODS: 1.5.3
