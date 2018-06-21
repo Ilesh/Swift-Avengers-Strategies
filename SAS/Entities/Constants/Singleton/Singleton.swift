@@ -19,10 +19,8 @@ class Connectivity {
 }   
 
 class Singleton: NSObject {
+    
     static let sharedSingleton = Singleton()
-    
-    
-    
     
     var is_presented = false
     var is_PeopleDetailsVC = false
@@ -40,7 +38,50 @@ class Singleton: NSObject {
         }
     }
     
-    
+    //MARK:- TO FIND THE DISTANCE BETWEEN LOCATION
+    func getLocationList(strLat:String,strLong:String,successBlock: @escaping (_ strDistance:String,_ strTime:String) -> Void,failureBlock: @escaping () -> Void) {
+        
+        //MAKE SURE CURRENT LOCATION IS AVAILABLE
+        if true { //Global.appDelegate.location !== nil
+            let url = URL(string: "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=\(0.0),\(0.0)&destinations=\(strLat),\(strLong)")
+            URLSession.shared.dataTask(with: url!, completionHandler: {
+                (data, response, error) in
+                if(error != nil){
+                    print("error")
+                }else{
+                    do{
+                        let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments) as! [String : AnyObject]
+                        if let arrRout = json["rows"] as? [[String:Any]] {
+                            if let dict = arrRout.first as? [String:Any] {
+                                if let arrElement = dict["elements"] as? [[String:Any]] {
+                                    if let dict = arrElement.first as? [String:Any] {
+                                        var strDistance = ""; var time = "";
+                                        if let distance = dict["distance"] as? [String:Any] , let text = distance["text"] as? String {
+                                            print(text)
+                                            strDistance = text //String(text/1000)
+                                        }
+                                        if let duration = dict["duration"] as? [String:Any] , let text = duration["text"] as? String {
+                                            print(text)
+                                            time = text
+                                        }
+                                        successBlock(strDistance,time)
+                                    }
+                                }
+                            }
+                        }
+                        OperationQueue.main.addOperation({
+                            
+                        })
+                    }catch let error as NSError{
+                        print(error)
+                        failureBlock()
+                    }
+                }
+            }).resume()
+        }else{
+            failureBlock()
+        }
+    }
     
     //MARK: - APP STATE:
     func isAppLaunchedFirst()->Bool{
