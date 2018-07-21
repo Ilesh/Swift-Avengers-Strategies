@@ -1,19 +1,19 @@
 //
 //  Utility.swift
 //  StructureApp
-//  
+//
 
 
 import Foundation
 import UIKit
 
-public struct Utility {
-    
-    
+let CURRENT_DEVICE                              =   UIDevice.current
+
+public class Utility {
     /// App's name (if applicable).
     public static var appDisplayName: String? {
         // http://stackoverflow.com/questions/28254377/get-app-name-in-swift
-        return Bundle.main.infoDictionary?[kCFBundleNameKey as String] as? String
+        return Bundle.main.infoDictionary?["CFBundleDisplayName"] as? String //return object(forInfoDictionaryKey: "CFBundleDisplayName") as? String
     }
     
     /// This will return a App Vendor UUID
@@ -42,7 +42,7 @@ public struct Utility {
             return UIApplication.shared.applicationIconBadgeNumber
         }
         set {
-            UIApplication.shared.applicationIconBadgeNumber = 0
+            UIApplication.shared.applicationIconBadgeNumber = newValue
         }
     }
     
@@ -52,40 +52,40 @@ public struct Utility {
     }
     
     /// Current battery level.
-//    public static var batteryLevel: Float {
-//        return CURRENT_DEVICE.batteryLevel
-//    }
+    public static var batteryLevel: Float {
+        return CURRENT_DEVICE.batteryLevel
+    }
     
     /// Screen height.
     public static var screenHeight: CGFloat {
         #if os(iOS) || os(tvOS)
-            return UIScreen.main.bounds.height
+        return UIScreen.main.bounds.height
         #elseif os(watchOS)
-            return CURRENT_DEVICE.screenBounds.height
+        return CURRENT_DEVICE.screenBounds.height
         #endif
     }
     
     /// Screen width.
     public static var screenWidth: CGFloat {
         #if os(iOS) || os(tvOS)
-            return UIScreen.main.bounds.width
+        return UIScreen.main.bounds.width
         #elseif os(watchOS)
-            return CURRENT_DEVICE.screenBounds.width
+        return CURRENT_DEVICE.screenBounds.width
         #endif
     }
     
     /// Current orientation of device.
-//    public static var deviceOrientation: UIDeviceOrientation {
-//        return CURRENT_DEVICE.orientation
-//    }
+    public static var deviceOrientation: UIDeviceOrientation {
+        return CURRENT_DEVICE.orientation
+    }
     
     /// Check if app is running in debug mode.
     public static var isInDebuggingMode: Bool {
         // http://stackoverflow.com/questions/9063100/xcode-ios-how-to-determine-whether-code-is-running-in-debug-release-build
         #if DEBUG
-            return true
+        return true
         #else
-            return false
+        return false
         #endif
     }
     
@@ -113,9 +113,9 @@ public struct Utility {
     public static var isRunningOnSimulator: Bool {
         // http://stackoverflow.com/questions/24869481/detect-if-app-is-being-built-for-device-or-simulator-in-swift
         #if targetEnvironment(simulator)
-            return true
+        return true
         #else
-            return false
+        return false
         #endif
     }
     
@@ -164,4 +164,158 @@ public struct Utility {
         }
     }
     
+    /// Get current system dialCode
+    /// - Returns: dialCode and country name
+    //    public static func getCurrentDialCode() -> (dialCode: String, countryName: String)? {
+    //
+    //        //Get current country code of device and set
+    //        let CallingCodes = { () -> [[String: String]] in
+    //            let resourceBundle = Bundle(for: MICountryPicker.classForCoder())
+    //            guard let path = resourceBundle.path(forResource: "CallingCodes", ofType: "plist") else { return[] }
+    //            return NSArray(contentsOfFile: path) as! [[String: String]]
+    //        }()
+    //        if let countryCode = (Locale.current as NSLocale).object(forKey: .countryCode) as? String {
+    //            let countryData = CallingCodes.filter { $0["code"] == countryCode}
+    //            if countryData.count > 0, let dialCode = countryData[0]["dial_code"], let countryName = countryData[0]["name"] {
+    //                return (dialCode, countryName)
+    //            }
+    //        }
+    //        return nil
+    //    }
+    
+    //MARK:- Get image display size
+    
+    func getNewImageSizeFromCurrentImageSize(_ currentImageSize: CGSize, rectSize: CGSize) -> CGSize {
+        
+        let widthFactor = currentImageSize.width / rectSize.width
+        
+        let newSize: CGSize
+        
+        if currentImageSize.width < rectSize.width {
+            newSize = currentImageSize
+        }
+        else {
+            newSize = CGSize(width: currentImageSize.width/widthFactor, height: currentImageSize.height/widthFactor)
+        }
+        
+        return newSize
+    }
+    
+    //MARK:- Get Current Time like 1 sec ago, 1 min ago
+    
+    func getTimeComponentFomDateString(_ receivedDate: String) -> String{
+        
+        let calendar = Calendar.current as Calendar
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+        
+        
+        let aDate = Date()
+        let timeStamp = dateFormatter.string(from: aDate)
+        
+        let date11 = dateFormatter.date(from: receivedDate)!
+        let date22 = dateFormatter.date(from: timeStamp)!
+        
+        
+        var flags = Set<Calendar.Component>([.year])
+        var components = calendar.dateComponents(flags, from: date11, to: date22)
+        
+        if components.year! > 0 {
+            var aTime = ""
+            if components.year! == 1{
+                aTime = "\(components.year!) year ago"
+            }
+            else {
+                aTime = "\(components.year!) years ago"
+            }
+            return aTime as String
+        }
+        
+        flags =  Set<Calendar.Component>([.month])
+        components = calendar.dateComponents(flags, from: date11, to: date22)
+        
+        if components.month! > 0 {
+            var aTime = ""
+            if components.month! == 1{
+                aTime = "\(components.month!) month ago"
+            }
+            else {
+                aTime = "\(components.month!) months ago"
+            }
+            return aTime as String
+            
+        }
+        
+        flags =  Set<Calendar.Component>([.day])
+        components = calendar.dateComponents(flags, from: date11, to: date22)
+        
+        
+        if components.day! > 0 {
+            var aTime = ""
+            if components.day! == 1{
+                aTime = "\(components.day!) day ago"
+            }
+            else {
+                aTime = "\(components.day!) days ago"
+            }
+            return aTime as String         }
+        
+        flags =  Set<Calendar.Component>([.hour])
+        components = calendar.dateComponents(flags, from: date11, to: date22)
+        
+        if components.hour! > 0 {
+            var aTime = ""
+            if components.hour! == 1{
+                aTime = "\(components.hour!) hr ago"
+            }
+            else {
+                aTime = "\(components.hour!) hrs ago"
+            }
+            return aTime as String
+        }
+        
+        flags =  Set<Calendar.Component>([.minute])
+        components = calendar.dateComponents(flags, from: date11, to: date22)
+        
+        if components.minute! > 0 {
+            var aTime = ""
+            if components.minute! == 1 {
+                aTime = "\(components.minute!) min ago"
+            }
+            else
+            {
+                aTime = "\(components.minute!) mins ago"
+            }
+            
+            return aTime
+            
+            // let aTime = "\(components.minute!) minutes"
+            // return aTime as String as NSString
+        }
+        
+        flags =  Set<Calendar.Component>([.second])
+        components = calendar.dateComponents(flags, from: date11, to: date22)
+        
+        if components.second! > 0 {
+            var aTime = ""
+            if components.second! == 1 {
+                aTime = "\(components.second!) sec ago"
+            }
+            else
+            {
+                aTime = "\(components.second!) secs ago"
+            }
+            
+            return aTime
+            
+            // let aTime = "\(components.second!) seconds"
+            // return aTime as String as NSString
+        }
+        
+        let aTime = "0 sec ago"
+        return aTime
+        
+    }
 }
