@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1523B7B4DA5654BAB92C117A /* Pods_SAS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404D5F6E51278D6F0D45DA77 /* Pods_SAS.framework */; };
 		9A2BB09B20EDE55500B553F4 /* DocumentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BB09A20EDE55500B553F4 /* DocumentsVC.swift */; };
+		9A5C4A73212D3B4A00373650 /* IPDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5C4A6E212D3B4900373650 /* IPDatePicker.xib */; };
+		9A5C4A74212D3B4A00373650 /* IPDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5C4A6F212D3B4900373650 /* IPDatePicker.swift */; };
+		9A5C4A75212D3B4A00373650 /* IPDataPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5C4A71212D3B4900373650 /* IPDataPicker.swift */; };
+		9A5C4A76212D3B4A00373650 /* IPDataPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5C4A72212D3B4900373650 /* IPDataPicker.xib */; };
 		9A7552D520D39837000E9550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7552D320D39837000E9550 /* Main.storyboard */; };
 		9A7552D720D39839000E9550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A7552D620D39839000E9550 /* Assets.xcassets */; };
 		9A7552DA20D39839000E9550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7552D820D39839000E9550 /* LaunchScreen.storyboard */; };
@@ -77,6 +81,10 @@
 		404D5F6E51278D6F0D45DA77 /* Pods_SAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B55416DD2F17F3D79741E4 /* Pods-SAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAS/Pods-SAS.release.xcconfig"; sourceTree = "<group>"; };
 		9A2BB09A20EDE55500B553F4 /* DocumentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsVC.swift; sourceTree = "<group>"; };
+		9A5C4A6E212D3B4900373650 /* IPDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IPDatePicker.xib; sourceTree = "<group>"; };
+		9A5C4A6F212D3B4900373650 /* IPDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPDatePicker.swift; sourceTree = "<group>"; };
+		9A5C4A71212D3B4900373650 /* IPDataPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPDataPicker.swift; sourceTree = "<group>"; };
+		9A5C4A72212D3B4900373650 /* IPDataPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IPDataPicker.xib; sourceTree = "<group>"; };
 		9A7552CC20D39837000E9550 /* SAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7552D420D39837000E9550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A7552D620D39839000E9550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +167,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A5C4A6D212D3B4900373650 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				9A5C4A6E212D3B4900373650 /* IPDatePicker.xib */,
+				9A5C4A6F212D3B4900373650 /* IPDatePicker.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		9A5C4A70212D3B4900373650 /* DataPicker */ = {
+			isa = PBXGroup;
+			children = (
+				9A5C4A71212D3B4900373650 /* IPDataPicker.swift */,
+				9A5C4A72212D3B4900373650 /* IPDataPicker.xib */,
+			);
+			path = DataPicker;
+			sourceTree = "<group>";
+		};
 		9A7552C320D39837000E9550 = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +461,8 @@
 		9ADC4F4020D4E95A00B85EDF /* ConstomCode */ = {
 			isa = PBXGroup;
 			children = (
+				9A5C4A70212D3B4900373650 /* DataPicker */,
+				9A5C4A6D212D3B4900373650 /* DatePicker */,
 				9ADC4F4120D4E95A00B85EDF /* VersionCheck */,
 				9ADC4F4520D4E95A00B85EDF /* Tabbar */,
 				9ADC4F4720D4E95A00B85EDF /* IPLable */,
@@ -616,6 +644,7 @@
 				9ADC4F1420D4E7CC00B85EDF /* sample.txt in Resources */,
 				9ADC4F1920D4E7CC00B85EDF /* Muli-Light.ttf in Resources */,
 				9A7552D720D39839000E9550 /* Assets.xcassets in Resources */,
+				9A5C4A76212D3B4A00373650 /* IPDataPicker.xib in Resources */,
 				9ADC4F8820D4E95A00B85EDF /* ViewDurationPicker.xib in Resources */,
 				9ADC4F1620D4E7CC00B85EDF /* sample.txt in Resources */,
 				9A7552D520D39837000E9550 /* Main.storyboard in Resources */,
@@ -623,6 +652,7 @@
 				9ADC4F1820D4E7CC00B85EDF /* Muli-SemiBold.ttf in Resources */,
 				9ADC4F1320D4E7CC00B85EDF /* Info.plist in Resources */,
 				9ADC4F8920D4E95A00B85EDF /* NotificationView.xib in Resources */,
+				9A5C4A73212D3B4A00373650 /* IPDatePicker.xib in Resources */,
 				9ADC4F1B20D4E7CC00B85EDF /* Localizable.strings in Resources */,
 				9ADC4F1520D4E7CC00B85EDF /* sample.txt in Resources */,
 				9ADC4F1720D4E7CC00B85EDF /* Muli-Bold.ttf in Resources */,
@@ -706,6 +736,7 @@
 				9ADC4F7720D4E95A00B85EDF /* IntExtensions.swift in Sources */,
 				9ADC4F6A20D4E95A00B85EDF /* UILabelExtensions.swift in Sources */,
 				9ADC4F7E20D4E95A00B85EDF /* IPAutoScalingLabel.swift in Sources */,
+				9A5C4A74212D3B4A00373650 /* IPDatePicker.swift in Sources */,
 				9ADC4F7320D4E95A00B85EDF /* BoolExtensions.swift in Sources */,
 				9ADC4EE220D4E7CC00B85EDF /* AppDelegate.swift in Sources */,
 				9ADC4F8120D4E95A00B85EDF /* Reachability.swift in Sources */,
@@ -724,6 +755,7 @@
 				9ADC4F7820D4E95A00B85EDF /* DateExtensions.swift in Sources */,
 				9ADC4F6820D4E95A00B85EDF /* UINavigationControllerExtensions.swift in Sources */,
 				9ADC4F7D20D4E95A00B85EDF /* IPAutoScalingButton.swift in Sources */,
+				9A5C4A75212D3B4A00373650 /* IPDataPicker.swift in Sources */,
 				9ADC4F7F20D4E95A00B85EDF /* AFAPICaller.swift in Sources */,
 				9ADC4F6220D4E95A00B85EDF /* UITableViewExtensions.swift in Sources */,
 				9ADC4F6420D4E95A00B85EDF /* UINavigationBarExtensions.swift in Sources */,

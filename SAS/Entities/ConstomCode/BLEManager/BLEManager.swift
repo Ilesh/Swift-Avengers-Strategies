@@ -60,6 +60,7 @@ class BLEManager: NSObject {
     public static let GG = "GG"
     public static let GN = "GN"
     public static let GL = "GL"
+    
     var currentBLEstatus : BluetoothState = .unknown
     let serviceUUID = CBUUID(string: Global.RAVASCREDENTIAL.CLIENT_CHARACTERISTIC_SERVICE)
     //MARK: Mendetory first implement // Set background mode on first please
@@ -72,6 +73,7 @@ class BLEManager: NSObject {
     func observeDisconnection()  {
         NotificationCenter.default.addObserver(self, selector: #selector(DisConnectManage), name: Notification.Name(rawValue: "DidDisconnectRavas"), object: nil)
     }
+    
     @objc func DisConnectManage()
     {
         Global.appDelegate.hideStatusBar()
@@ -83,7 +85,6 @@ class BLEManager: NSObject {
                 
             }
         }
-        
     }
     
     
@@ -202,12 +203,7 @@ class BLEManager: NSObject {
                     TopsBLEManager.shared.ConnectedPeripheral = nil
                     success(peripheral)
                 }
-                
-                print(
-                    
-                    
-                )
-                
+                print()
             case .scanStopped(let error):
                 print("\(error?.localizedDescription)")
                 failure((error?.localizedDescription) ?? "")
@@ -294,10 +290,6 @@ class BLEManager: NSObject {
         }
     }
     
-    
-    
-    
-    
     func didgetNotify(){
         
         NotificationCenter.default.addObserver(forName: Peripheral.PeripheralCharacteristicValueUpdate,
@@ -313,7 +305,6 @@ class BLEManager: NSObject {
                                                     var strV = String.init(data: charac.value!, encoding: .utf8) ?? ""
                                                     
                                                     let test = String(strV.filter { !" \n\t\r".contains($0) })
-                                                    
                                                     
                                                 }
         }
