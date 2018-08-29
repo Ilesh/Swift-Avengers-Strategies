@@ -12,6 +12,27 @@ import UIKit
 // MARK: - Methods
 public extension UINavigationController {
     
+    func popToViewControllerWithHandler(viewController: UIViewController, completion: @escaping ()->()) {
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(completion)
+        self.popToViewController(viewController, animated: true)
+        CATransaction.commit()
+    }
+    
+    func popViewControllerWithHandler(completion: @escaping ()->()) {
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(completion)
+        self.popViewController(animated: true)
+        CATransaction.commit()
+    }
+    
+    func pushViewController(viewController: UIViewController, completion: @escaping ()->()) {
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(completion)
+        self.pushViewController(viewController, animated: true)
+        CATransaction.commit()
+    }
+    
 //    /// Pop ViewController with completion handler.
 //    ///
 //    /// - Parameter completion: optional completion handler (default is nil).
