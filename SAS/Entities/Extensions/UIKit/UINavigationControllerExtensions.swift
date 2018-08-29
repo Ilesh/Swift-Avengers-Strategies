@@ -67,7 +67,15 @@ public extension UINavigationController {
         else {
             self.navigationBar.shadowImage = UIImage()
         }
-
     }
     
+    public func pushViewControllerFromBottom(_ viewController: UIViewController, anmatio: Bool) {
+        let transition:CATransition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromBottom
+        self.navigationController!.view.layer.add(transition, forKey: kCATransition)
+        self.navigationController?.pushViewController(viewController, animated: false)
+    }
 }
