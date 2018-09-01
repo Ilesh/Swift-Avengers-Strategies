@@ -1,0 +1,155 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;\f2\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue255;
+\red43\green131\blue159;\red0\green128\blue0;\red163\green21\blue21;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c0\c0\c100000;
+\csgenericrgb\c16900\c51200\c62500;\csgenericrgb\c0\c50200\c0;\csgenericrgb\c63900\c8200\c8200;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab593
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b \cf0 \cb1 //  Tableview header twitter effect and scroll position.\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0\b0 \cf4 \cb3 \
+func\cf2  scrollViewDidScroll(\cf4 _\cf2  scrollView: \cf5 UIScrollView\cf2 ) \{
+\f2 \cf0 \
+
+\f0 \cf2         \cf4 let\cf2  yPos: \cf5 CGFloat\cf2  = -scrollView.\cf5 contentOffset\cf2 .\cf5 y
+\f2 \cf0 \
+
+\f0 \cf2         \cf4 if\cf2  (yPos > 0) \{
+\f2 \cf0 \
+
+\f0 \cf2             \cf4 var\cf2  imgRect: \cf5 CGRect\cf2  = \cf4 self\cf2 .\cf5 coverImageView\cf2 .\cf5 frame
+\f2 \cf0 \
+
+\f0 \cf2             imgRect.\cf5 origin\cf2 .\cf5 y\cf2  = scrollView.\cf5 contentOffset\cf2 .\cf5 y
+\f2 \cf0 \
+
+\f0 \cf2             imgRect.\cf5 size\cf2 .\cf5 height\cf2  = \cf5 kHeaderHeight\cf2 +yPos
+\f2 \cf0 \
+
+\f0 \cf2             \cf4 self\cf2 .\cf5 coverImageView\cf2 .\cf5 frame\cf2  = imgRect
+\f2 \cf0 \
+
+\f0 \cf2         \}
+\f2 \cf0 \
+
+\f0 \cf2         
+\f2 \cf0 \
+
+\f0 \cf2         \cf4 if\cf2  scrollView.\cf5 contentOffset\cf2 .\cf5 y\cf2  < 200 \{
+\f2 \cf0 \
+
+\f0 \cf2             \cf5 UIView\cf2 .\cf5 animate\cf2 (withDuration: 1.0, delay: 0, options: \cf5 UIViewAnimationOptions\cf2 (), animations: \{
+\f2 \cf0 \
+
+\f0 \cf2                 \cf4 self\cf2 .\cf5 HeaderTitle\cf2 .\cf5 isHidden\cf2  = \cf4 true
+\f2 \cf0 \
+
+\f0 \cf2                 \cf4 self\cf2 .\cf5 viewHeader\cf2 .\cf5 backgroundColor\cf2  = \cf5 UIColor\cf2 .\cf5 clear
+\f2 \cf0 \
+
+\f0 \cf2                 \cf6 //print("hide")
+\f2 \cf0 \
+
+\f0 \cf2             \}, completion: \cf4 nil\cf2 )
+\f2 \cf0 \
+
+\f0 \cf2         \}\cf4 else\cf2 \{
+\f2 \cf0 \
+
+\f0 \cf2             \cf5 UIView\cf2 .\cf5 animate\cf2 (withDuration: 0.5, delay: 0, options: \cf5 UIViewAnimationOptions\cf2 (), animations: \{
+\f2 \cf0 \
+
+\f0 \cf2                 \cf6 //print("show")
+\f2 \cf0 \
+
+\f0 \cf2                 \cf4 self\cf2 .\cf5 viewHeader\cf2 .\cf5 backgroundColor\cf2  = \cf5 UIColor\cf2 .\cf5 hexString\cf2 (\cf7 "00cba7"\cf2 )
+\f2 \cf0 \
+
+\f0 \cf2                 \cf4 self\cf2 .\cf5 HeaderTitle\cf2 .\cf5 isHidden\cf2  = \cf4 false
+\f2 \cf0 \
+
+\f0 \cf2             \}, completion: \cf4 nil\cf2 )
+\f2 \cf0 \
+
+\f0 \cf2         \}
+\f2 \cf0 \
+
+\f0 \cf2      \cf6 //print("valocity \\(scrollView.contentOffset.y)")
+\f2 \cf0 \
+
+\f0 \cf2 \}\
+\
+\
+/**********************************************************\
+***********************************************************\
+// API CALLER METHODS FOR GETTING LIST\
+\
+\cf4 func\cf2  getMyCompanyList(successBlock: \cf4 @escaping\cf2  () -> \cf5 Void\cf2 ,failureBlock: \cf4 @escaping\cf2  () -> \cf5 Void\cf2 )\{
+\f2 \cf0 \
+
+\f0 \cf2         \cf5 WebService\cf2 .callAPI(\cf5 CompanyRouter\cf2 .getMyCompanies, controller: \cf4 nil\cf2 , callSilently: \cf4 true\cf2 , successBlock: \{ (response) \cf4 in
+\f2 \cf0 \
+
+\f0 \cf2             \cf4 if\cf2  \cf4 let\cf2  jsonArray = response \cf4 as\cf2 ? [[\cf5 String\cf2 : \cf4 Any\cf2 ]] \{
+\f2 \cf0 \
+
+\f0 \cf2                 Singleton.shared.arrMyCompanies.removeAll()
+\f2 \cf0 \
+
+\f0 \cf2                 \cf4 for\cf2  element \cf4 in\cf2  jsonArray \{
+\f2 \cf0 \
+
+\f0 \cf2                     \cf4 let\cf2  currentCompany = Company(json: element)
+\f2 \cf0 \
+
+\f0 \cf2                     \cf4 if\cf2  currentCompany != \cf4 nil\cf2  \{
+\f2 \cf0 \
+
+\f0 \cf2                         Singleton.shared.arrMyCompanies.append(currentCompany!)
+\f2 \cf0 \
+
+\f0 \cf2                     \}
+\f2 \cf0 \
+
+\f0 \cf2                 \}
+\f2 \cf0 \
+
+\f0 \cf2                 successBlock()
+\f2 \cf0 \
+
+\f0 \cf2             \}\cf4 else\cf2 \{
+\f2 \cf0 \
+
+\f0 \cf2                 failureBlock()
+\f2 \cf0 \
+
+\f0 \cf2             \}
+\f2 \cf0 \
+
+\f0 \cf2         \}) \{ (error, isTimeout) \cf4 in
+\f2 \cf0 \
+
+\f0 \cf2             print(\cf7 "\cf2 \\\cf7 (\cf2 String(describing: error?.localizedDescription)\cf7 )"\cf2 )
+\f2 \cf0 \
+
+\f0 \cf2             failureBlock()
+\f2 \cf0 \
+
+\f0 \cf2         \}
+\f2 \cf0 \
+
+\f0 \cf2     \}\
+\
+/**********************************************************\
+***********************************************************\
+\
+}

@@ -32,7 +32,7 @@ class IPDataPicker: UIView {
         var animationDuration: TimeInterval = 0.35
         
         var contentBackgroundColor: UIColor = UIColor.white
-        var headerBackgroundColor: UIColor = UIColor.primaryGreen
+        var headerBackgroundColor: UIColor = UIColor.lightGray
         var btnDoneColor: UIColor = UIColor.white
         var btnCancelColor: UIColor = UIColor.white
         var overlayBackgroundColor: UIColor = UIColor.clear

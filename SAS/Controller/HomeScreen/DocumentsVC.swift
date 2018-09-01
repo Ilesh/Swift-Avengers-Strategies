@@ -85,14 +85,14 @@ extension DocumentsVC : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrJobs.count
+        return  10//arrJobs.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "JobsCell", for: indexPath) as! JobsCell
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "JobsCell", for: indexPath) as! JobsCell
         //cell.loadDataOfCell(data: arrJobs[indexPath.row])
-        return cell
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -125,9 +125,9 @@ extension DocumentsVC: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! OnboardingSkillCollectionViewCell
+        /*let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! OnboardingSkillCollectionViewCell
         cell.nameLabel.text = "Index"//arrSelectedLocation[indexPath.row].name
-        cell.indexPath = indexPath
-        return cell
+        cell.indexPath = indexPath*/
+        return UICollectionViewCell()
     }
 }

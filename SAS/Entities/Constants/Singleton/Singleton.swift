@@ -96,6 +96,25 @@ class Singleton: NSObject {
         }
     }
     
+    func isAppLaunchedToday()->Bool{
+        let defaults = UserDefaults.standard
+        if let date = defaults.object(forKey: "isAppAlreadyLaunchedSecificTime") as? Date {
+            if date > Date().addingTimeInterval(60*60*24){
+                defaults.set(Date(), forKey: "isAppAlreadyLaunchedSecificTime")
+                defaults.synchronize()
+                print("App launched first time")
+                return true
+            }
+            print("App already launched ")
+            return false
+        }else{
+            defaults.set(Date(), forKey: "isAppAlreadyLaunchedSecificTime")
+            defaults.synchronize()
+            print("App launched first time")
+            return true
+        }
+    }
+    
     //MARK: - Corner Radius:
     func setCornerRadius(view:UIView, radius:CGFloat) {
         view.layer.cornerRadius = radius
