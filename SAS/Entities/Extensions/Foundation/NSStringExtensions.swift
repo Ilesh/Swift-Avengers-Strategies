@@ -103,6 +103,10 @@ extension String {
             .joined()
     }
     
+    var keepNumericsOnly: String {
+        return self.components(separatedBy: CharacterSet(charactersIn: "0123456789+-:")).joined(separator: "")
+    }
+    
     /// Check if string contains one or more letters.
     public var hasLetters: Bool {
         return rangeOfCharacter(from: .letters, options: .numeric, range: nil) != nil
