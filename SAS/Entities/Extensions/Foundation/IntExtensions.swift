@@ -189,3 +189,27 @@ public extension Int {
     
 }
 
+extension BinaryInteger {
+    
+    /// convert intger to binary with 4,8,16,... 32 bit
+    ///
+    ///     reference - https://stackoverflow.com/a/51882984/2910061
+    /// description:-
+    ///
+    ///     UInt8(22).binaryDescription     // "0b00010110"
+    ///     Int8(60).binaryDescription      // "0b00111100"
+    ///     Int8(-60).binaryDescription     // "0b11000100"
+    ///     Int16(255).binaryDescription    // "0b0000000011111111"
+    ///     Int16(-255).binaryDescription   // "0b1111111100000001"
+    ///     Int32(2359296).binaryDescription // "00000000001001000000000000000000"
+    /// ---
+    var binaryDescription: String {
+        var binaryString = ""
+        var internalNumber = self
+        for _ in (1...self.bitWidth) {
+            binaryString.insert(contentsOf: "\(internalNumber & 1)", at: binaryString.startIndex)
+            internalNumber >>= 1
+        }
+        return binaryString
+    }
+}

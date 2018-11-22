@@ -38,6 +38,21 @@ class Singleton: NSObject {
         }
     }
     
+    
+    //MARK: - GET MIME TYPE FROM THE FILE TYPE
+    /*func getMIME_Type(strFileName:String) -> String{
+        //https://gist.github.com/ngs/918b07f448977789cf69
+        if strFileName.getPathExtension() == "pdf" {
+            return "application/pdf"
+        }else if strFileName.getPathExtension() == "docx" {
+            return "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }else if strFileName.getPathExtension() == "doc" {
+            return "application/msword"
+        }else{
+            return "image/jpeg"
+        }
+    }*/
+    
     //MARK:- TO FIND THE DISTANCE BETWEEN LOCATION
     func getLocationList(strLat:String,strLong:String,successBlock: @escaping (_ strDistance:String,_ strTime:String) -> Void,failureBlock: @escaping () -> Void) {
         

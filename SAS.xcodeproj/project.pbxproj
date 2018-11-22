@@ -19,12 +19,8 @@
 		9A7552DA20D39839000E9550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7552D820D39839000E9550 /* LaunchScreen.storyboard */; };
 		9ADC4EE120D4E7CC00B85EDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4E7E20D4E7CB00B85EDF /* ViewController.swift */; };
 		9ADC4EE220D4E7CC00B85EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4E8020D4E7CB00B85EDF /* AppDelegate.swift */; };
-		9ADC4F1120D4E7CC00B85EDF /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4EC720D4E7CC00B85EDF /* sample.txt */; };
-		9ADC4F1220D4E7CC00B85EDF /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4ECC20D4E7CC00B85EDF /* sample.txt */; };
-		9ADC4F1320D4E7CC00B85EDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4ECE20D4E7CC00B85EDF /* Info.plist */; };
-		9ADC4F1420D4E7CC00B85EDF /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4ED020D4E7CC00B85EDF /* sample.txt */; };
-		9ADC4F1520D4E7CC00B85EDF /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4ED220D4E7CC00B85EDF /* sample.txt */; };
-		9ADC4F1620D4E7CC00B85EDF /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4ED420D4E7CC00B85EDF /* sample.txt */; };
+		9ADC4F1120D4E7CC00B85EDF /* sampleaudio.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4EC720D4E7CC00B85EDF /* sampleaudio.txt */; };
+		9ADC4F1220D4E7CC00B85EDF /* sampleLocation.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4ECC20D4E7CC00B85EDF /* sampleLocation.txt */; };
 		9ADC4F1720D4E7CC00B85EDF /* Muli-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4ED720D4E7CC00B85EDF /* Muli-Bold.ttf */; };
 		9ADC4F1820D4E7CC00B85EDF /* Muli-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4ED820D4E7CC00B85EDF /* Muli-SemiBold.ttf */; };
 		9ADC4F1920D4E7CC00B85EDF /* Muli-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4ED920D4E7CC00B85EDF /* Muli-Light.ttf */; };
@@ -64,7 +60,6 @@
 		9ADC4F7F20D4E95A00B85EDF /* AFAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4F4B20D4E95A00B85EDF /* AFAPICaller.swift */; };
 		9ADC4F8020D4E95A00B85EDF /* AFAPIMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4F4C20D4E95A00B85EDF /* AFAPIMaster.swift */; };
 		9ADC4F8120D4E95A00B85EDF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4F4E20D4E95A00B85EDF /* Reachability.swift */; };
-		9ADC4F8220D4E95A00B85EDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5020D4E95A00B85EDF /* Info.plist */; };
 		9ADC4F8320D4E95A00B85EDF /* IPNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5220D4E95A00B85EDF /* IPNotificationManager.swift */; };
 		9ADC4F8420D4E95A00B85EDF /* SRCutomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5420D4E95A00B85EDF /* SRCutomButton.swift */; };
 		9ADC4F8520D4E95A00B85EDF /* SRCutomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5520D4E95A00B85EDF /* SRCutomTextField.swift */; };
@@ -94,13 +89,9 @@
 		9A7552DB20D39839000E9550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ADC4E7E20D4E7CB00B85EDF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9ADC4E8020D4E7CB00B85EDF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9ADC4EC720D4E7CC00B85EDF /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
+		9ADC4EC720D4E7CC00B85EDF /* sampleaudio.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sampleaudio.txt; sourceTree = "<group>"; };
 		9ADC4EC920D4E7CC00B85EDF /* StructureApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StructureApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		9ADC4ECC20D4E7CC00B85EDF /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
-		9ADC4ECE20D4E7CC00B85EDF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9ADC4ED020D4E7CC00B85EDF /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
-		9ADC4ED220D4E7CC00B85EDF /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
-		9ADC4ED420D4E7CC00B85EDF /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
+		9ADC4ECC20D4E7CC00B85EDF /* sampleLocation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sampleLocation.txt; sourceTree = "<group>"; };
 		9ADC4ED720D4E7CC00B85EDF /* Muli-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Bold.ttf"; sourceTree = "<group>"; };
 		9ADC4ED820D4E7CC00B85EDF /* Muli-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-SemiBold.ttf"; sourceTree = "<group>"; };
 		9ADC4ED920D4E7CC00B85EDF /* Muli-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Light.ttf"; sourceTree = "<group>"; };
@@ -144,7 +135,6 @@
 		9ADC4F4C20D4E95A00B85EDF /* AFAPIMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFAPIMaster.swift; sourceTree = "<group>"; };
 		9ADC4F4E20D4E95A00B85EDF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		9ADC4F4F20D4E95A00B85EDF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		9ADC4F5020D4E95A00B85EDF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ADC4F5220D4E95A00B85EDF /* IPNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPNotificationManager.swift; sourceTree = "<group>"; };
 		9ADC4F5420D4E95A00B85EDF /* SRCutomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRCutomButton.swift; sourceTree = "<group>"; };
 		9ADC4F5520D4E95A00B85EDF /* SRCutomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRCutomTextField.swift; sourceTree = "<group>"; };
@@ -273,7 +263,7 @@
 		9ADC4EC620D4E7CC00B85EDF /* Audios */ = {
 			isa = PBXGroup;
 			children = (
-				9ADC4EC720D4E7CC00B85EDF /* sample.txt */,
+				9ADC4EC720D4E7CC00B85EDF /* sampleaudio.txt */,
 			);
 			path = Audios;
 			sourceTree = "<group>";
@@ -296,7 +286,7 @@
 		9ADC4ECB20D4E7CC00B85EDF /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				9ADC4ECC20D4E7CC00B85EDF /* sample.txt */,
+				9ADC4ECC20D4E7CC00B85EDF /* sampleLocation.txt */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -304,7 +294,6 @@
 		9ADC4ECD20D4E7CC00B85EDF /* PropertyList */ = {
 			isa = PBXGroup;
 			children = (
-				9ADC4ECE20D4E7CC00B85EDF /* Info.plist */,
 			);
 			path = PropertyList;
 			sourceTree = "<group>";
@@ -312,7 +301,6 @@
 		9ADC4ECF20D4E7CC00B85EDF /* Docs */ = {
 			isa = PBXGroup;
 			children = (
-				9ADC4ED020D4E7CC00B85EDF /* sample.txt */,
 				9A06EB5A213A9A2D004FFEB9 /* Documentation.rtf */,
 			);
 			path = Docs;
@@ -321,7 +309,6 @@
 		9ADC4ED120D4E7CC00B85EDF /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				9ADC4ED220D4E7CC00B85EDF /* sample.txt */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -329,7 +316,6 @@
 		9ADC4ED320D4E7CC00B85EDF /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				9ADC4ED420D4E7CC00B85EDF /* sample.txt */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -518,7 +504,6 @@
 			children = (
 				9ADC4F4E20D4E95A00B85EDF /* Reachability.swift */,
 				9ADC4F4F20D4E95A00B85EDF /* Reachability.h */,
-				9ADC4F5020D4E95A00B85EDF /* Info.plist */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -641,23 +626,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ADC4F1220D4E7CC00B85EDF /* sample.txt in Resources */,
+				9ADC4F1220D4E7CC00B85EDF /* sampleLocation.txt in Resources */,
 				9A7552DA20D39839000E9550 /* LaunchScreen.storyboard in Resources */,
-				9ADC4F1120D4E7CC00B85EDF /* sample.txt in Resources */,
-				9ADC4F1420D4E7CC00B85EDF /* sample.txt in Resources */,
+				9ADC4F1120D4E7CC00B85EDF /* sampleaudio.txt in Resources */,
 				9ADC4F1920D4E7CC00B85EDF /* Muli-Light.ttf in Resources */,
 				9A7552D720D39839000E9550 /* Assets.xcassets in Resources */,
 				9A5C4A76212D3B4A00373650 /* IPDataPicker.xib in Resources */,
 				9ADC4F8820D4E95A00B85EDF /* ViewDurationPicker.xib in Resources */,
-				9ADC4F1620D4E7CC00B85EDF /* sample.txt in Resources */,
 				9A7552D520D39837000E9550 /* Main.storyboard in Resources */,
-				9ADC4F8220D4E95A00B85EDF /* Info.plist in Resources */,
 				9ADC4F1820D4E7CC00B85EDF /* Muli-SemiBold.ttf in Resources */,
-				9ADC4F1320D4E7CC00B85EDF /* Info.plist in Resources */,
 				9ADC4F8920D4E95A00B85EDF /* NotificationView.xib in Resources */,
 				9A5C4A73212D3B4A00373650 /* IPDatePicker.xib in Resources */,
 				9ADC4F1B20D4E7CC00B85EDF /* Localizable.strings in Resources */,
-				9ADC4F1520D4E7CC00B85EDF /* sample.txt in Resources */,
 				9ADC4F1720D4E7CC00B85EDF /* Muli-Bold.ttf in Resources */,
 				9ADC4F8B20D4E95A00B85EDF /* ViewSort.xib in Resources */,
 				9ADC4F1A20D4E7CC00B85EDF /* Muli-Regular.ttf in Resources */,
