@@ -17,6 +17,12 @@
 		9A7552D520D39837000E9550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7552D320D39837000E9550 /* Main.storyboard */; };
 		9A7552D720D39839000E9550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A7552D620D39839000E9550 /* Assets.xcassets */; };
 		9A7552DA20D39839000E9550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7552D820D39839000E9550 /* LaunchScreen.storyboard */; };
+		9A9333B521DB4A4100A2B803 /* ViewDurationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9333AF21DB4A4100A2B803 /* ViewDurationPicker.swift */; };
+		9A9333B621DB4A4100A2B803 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9333B021DB4A4100A2B803 /* NotificationView.swift */; };
+		9A9333B721DB4A4100A2B803 /* ViewDurationPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9333B121DB4A4100A2B803 /* ViewDurationPicker.xib */; };
+		9A9333B821DB4A4100A2B803 /* NotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9333B221DB4A4100A2B803 /* NotificationView.xib */; };
+		9A9333B921DB4A4100A2B803 /* ViewSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9333B321DB4A4100A2B803 /* ViewSort.swift */; };
+		9A9333BA21DB4A4100A2B803 /* ViewSort.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9333B421DB4A4100A2B803 /* ViewSort.xib */; };
 		9ADC4EE120D4E7CC00B85EDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4E7E20D4E7CB00B85EDF /* ViewController.swift */; };
 		9ADC4EE220D4E7CC00B85EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4E8020D4E7CB00B85EDF /* AppDelegate.swift */; };
 		9ADC4F1120D4E7CC00B85EDF /* sampleaudio.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4EC720D4E7CC00B85EDF /* sampleaudio.txt */; };
@@ -63,12 +69,6 @@
 		9ADC4F8320D4E95A00B85EDF /* IPNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5220D4E95A00B85EDF /* IPNotificationManager.swift */; };
 		9ADC4F8420D4E95A00B85EDF /* SRCutomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5420D4E95A00B85EDF /* SRCutomButton.swift */; };
 		9ADC4F8520D4E95A00B85EDF /* SRCutomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5520D4E95A00B85EDF /* SRCutomTextField.swift */; };
-		9ADC4F8620D4E95A00B85EDF /* ViewDurationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5720D4E95A00B85EDF /* ViewDurationPicker.swift */; };
-		9ADC4F8720D4E95A00B85EDF /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5820D4E95A00B85EDF /* NotificationView.swift */; };
-		9ADC4F8820D4E95A00B85EDF /* ViewDurationPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5920D4E95A00B85EDF /* ViewDurationPicker.xib */; };
-		9ADC4F8920D4E95A00B85EDF /* NotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5A20D4E95A00B85EDF /* NotificationView.xib */; };
-		9ADC4F8A20D4E95A00B85EDF /* ViewSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5B20D4E95A00B85EDF /* ViewSort.swift */; };
-		9ADC4F8B20D4E95A00B85EDF /* ViewSort.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5C20D4E95A00B85EDF /* ViewSort.xib */; };
 		9ADC4F8C20D4E95A00B85EDF /* LocalizeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC4F5E20D4E95A00B85EDF /* LocalizeHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +87,12 @@
 		9A7552D620D39839000E9550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A7552D920D39839000E9550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A7552DB20D39839000E9550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A9333AF21DB4A4100A2B803 /* ViewDurationPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDurationPicker.swift; sourceTree = "<group>"; };
+		9A9333B021DB4A4100A2B803 /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		9A9333B121DB4A4100A2B803 /* ViewDurationPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewDurationPicker.xib; sourceTree = "<group>"; };
+		9A9333B221DB4A4100A2B803 /* NotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationView.xib; sourceTree = "<group>"; };
+		9A9333B321DB4A4100A2B803 /* ViewSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSort.swift; sourceTree = "<group>"; };
+		9A9333B421DB4A4100A2B803 /* ViewSort.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewSort.xib; sourceTree = "<group>"; };
 		9ADC4E7E20D4E7CB00B85EDF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9ADC4E8020D4E7CB00B85EDF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ADC4EC720D4E7CC00B85EDF /* sampleaudio.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sampleaudio.txt; sourceTree = "<group>"; };
@@ -138,12 +144,6 @@
 		9ADC4F5220D4E95A00B85EDF /* IPNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPNotificationManager.swift; sourceTree = "<group>"; };
 		9ADC4F5420D4E95A00B85EDF /* SRCutomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRCutomButton.swift; sourceTree = "<group>"; };
 		9ADC4F5520D4E95A00B85EDF /* SRCutomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRCutomTextField.swift; sourceTree = "<group>"; };
-		9ADC4F5720D4E95A00B85EDF /* ViewDurationPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDurationPicker.swift; sourceTree = "<group>"; };
-		9ADC4F5820D4E95A00B85EDF /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
-		9ADC4F5920D4E95A00B85EDF /* ViewDurationPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewDurationPicker.xib; sourceTree = "<group>"; };
-		9ADC4F5A20D4E95A00B85EDF /* NotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationView.xib; sourceTree = "<group>"; };
-		9ADC4F5B20D4E95A00B85EDF /* ViewSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSort.swift; sourceTree = "<group>"; };
-		9ADC4F5C20D4E95A00B85EDF /* ViewSort.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewSort.xib; sourceTree = "<group>"; };
 		9ADC4F5E20D4E95A00B85EDF /* LocalizeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizeHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +209,19 @@
 				9A7552DB20D39839000E9550 /* Info.plist */,
 			);
 			path = SAS;
+			sourceTree = "<group>";
+		};
+		9A9333AE21DB4A4100A2B803 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A9333AF21DB4A4100A2B803 /* ViewDurationPicker.swift */,
+				9A9333B021DB4A4100A2B803 /* NotificationView.swift */,
+				9A9333B121DB4A4100A2B803 /* ViewDurationPicker.xib */,
+				9A9333B221DB4A4100A2B803 /* NotificationView.xib */,
+				9A9333B321DB4A4100A2B803 /* ViewSort.swift */,
+				9A9333B421DB4A4100A2B803 /* ViewSort.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9ADC4E7C20D4E7CB00B85EDF /* Controller */ = {
@@ -450,6 +463,7 @@
 		9ADC4F4020D4E95A00B85EDF /* ConstomCode */ = {
 			isa = PBXGroup;
 			children = (
+				9A9333AE21DB4A4100A2B803 /* Views */,
 				9A5C4A70212D3B4900373650 /* DataPicker */,
 				9A5C4A6D212D3B4900373650 /* DatePicker */,
 				9ADC4F4120D4E95A00B85EDF /* VersionCheck */,
@@ -459,7 +473,6 @@
 				9ADC4F4D20D4E95A00B85EDF /* Reachability */,
 				9ADC4F5120D4E95A00B85EDF /* Push_NotificationHandler */,
 				9ADC4F5320D4E95A00B85EDF /* SRCustomUIs */,
-				9ADC4F5620D4E95A00B85EDF /* Views */,
 				9ADC4F5D20D4E95A00B85EDF /* Localization */,
 			);
 			path = ConstomCode;
@@ -523,19 +536,6 @@
 				9ADC4F5520D4E95A00B85EDF /* SRCutomTextField.swift */,
 			);
 			path = SRCustomUIs;
-			sourceTree = "<group>";
-		};
-		9ADC4F5620D4E95A00B85EDF /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				9ADC4F5720D4E95A00B85EDF /* ViewDurationPicker.swift */,
-				9ADC4F5820D4E95A00B85EDF /* NotificationView.swift */,
-				9ADC4F5920D4E95A00B85EDF /* ViewDurationPicker.xib */,
-				9ADC4F5A20D4E95A00B85EDF /* NotificationView.xib */,
-				9ADC4F5B20D4E95A00B85EDF /* ViewSort.swift */,
-				9ADC4F5C20D4E95A00B85EDF /* ViewSort.xib */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		9ADC4F5D20D4E95A00B85EDF /* Localization */ = {
@@ -626,22 +626,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A9333BA21DB4A4100A2B803 /* ViewSort.xib in Resources */,
+				9A9333B721DB4A4100A2B803 /* ViewDurationPicker.xib in Resources */,
 				9ADC4F1220D4E7CC00B85EDF /* sampleLocation.txt in Resources */,
 				9A7552DA20D39839000E9550 /* LaunchScreen.storyboard in Resources */,
 				9ADC4F1120D4E7CC00B85EDF /* sampleaudio.txt in Resources */,
 				9ADC4F1920D4E7CC00B85EDF /* Muli-Light.ttf in Resources */,
 				9A7552D720D39839000E9550 /* Assets.xcassets in Resources */,
 				9A5C4A76212D3B4A00373650 /* IPDataPicker.xib in Resources */,
-				9ADC4F8820D4E95A00B85EDF /* ViewDurationPicker.xib in Resources */,
 				9A7552D520D39837000E9550 /* Main.storyboard in Resources */,
 				9ADC4F1820D4E7CC00B85EDF /* Muli-SemiBold.ttf in Resources */,
-				9ADC4F8920D4E95A00B85EDF /* NotificationView.xib in Resources */,
 				9A5C4A73212D3B4A00373650 /* IPDatePicker.xib in Resources */,
 				9ADC4F1B20D4E7CC00B85EDF /* Localizable.strings in Resources */,
 				9ADC4F1720D4E7CC00B85EDF /* Muli-Bold.ttf in Resources */,
-				9ADC4F8B20D4E95A00B85EDF /* ViewSort.xib in Resources */,
 				9ADC4F1A20D4E7CC00B85EDF /* Muli-Regular.ttf in Resources */,
 				9A06EB5B213A9A2D004FFEB9 /* Documentation.rtf in Resources */,
+				9A9333B821DB4A4100A2B803 /* NotificationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,7 +702,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ADC4F6620D4E95A00B85EDF /* UITextField+Paddingview.swift in Sources */,
-				9ADC4F8A20D4E95A00B85EDF /* ViewSort.swift in Sources */,
 				9ADC4F7220D4E95A00B85EDF /* DataExtensions.swift in Sources */,
 				9A2BB09B20EDE55500B553F4 /* DocumentsVC.swift in Sources */,
 				9ADC4F6720D4E95A00B85EDF /* UIImageExtensions.swift in Sources */,
@@ -710,7 +709,6 @@
 				9ADC4F7920D4E95A00B85EDF /* NSAttributedStringExtensions.swift in Sources */,
 				9ADC4F8320D4E95A00B85EDF /* IPNotificationManager.swift in Sources */,
 				9ADC4F7420D4E95A00B85EDF /* DoubleExtensions.swift in Sources */,
-				9ADC4F8620D4E95A00B85EDF /* ViewDurationPicker.swift in Sources */,
 				9ADC4F8520D4E95A00B85EDF /* SRCutomTextField.swift in Sources */,
 				9ADC4F8420D4E95A00B85EDF /* SRCutomButton.swift in Sources */,
 				9ADC4F6C20D4E95A00B85EDF /* UIImageViewExtensions.swift in Sources */,
@@ -726,10 +724,10 @@
 				9ADC4F8120D4E95A00B85EDF /* Reachability.swift in Sources */,
 				9ADC4F6B20D4E95A00B85EDF /* PhotosUtility.swift in Sources */,
 				9ADC4F7120D4E95A00B85EDF /* SignedNumericExtensions.swift in Sources */,
-				9ADC4F8720D4E95A00B85EDF /* NotificationView.swift in Sources */,
 				9ADC4F7620D4E95A00B85EDF /* FloatingPointExtensions.swift in Sources */,
 				9ADC4F8C20D4E95A00B85EDF /* LocalizeHelper.swift in Sources */,
 				9ADC4F6D20D4E95A00B85EDF /* UIColorExtensions.swift in Sources */,
+				9A9333B521DB4A4100A2B803 /* ViewDurationPicker.swift in Sources */,
 				9ADC4F7A20D4E95A00B85EDF /* CheckUpdateAppVersion.swift in Sources */,
 				9ADC4F7C20D4E95A00B85EDF /* UITabBarCustom.swift in Sources */,
 				9ADC4F6520D4E95A00B85EDF /* IPAlertviewController.swift in Sources */,
@@ -745,8 +743,10 @@
 				9ADC4F6420D4E95A00B85EDF /* UINavigationBarExtensions.swift in Sources */,
 				9ADC4EE120D4E7CC00B85EDF /* ViewController.swift in Sources */,
 				9ADC4F8020D4E95A00B85EDF /* AFAPIMaster.swift in Sources */,
+				9A9333B921DB4A4100A2B803 /* ViewSort.swift in Sources */,
 				9ADC4F6F20D4E95A00B85EDF /* FloatExtensions.swift in Sources */,
 				9ADC4F5F20D4E95A00B85EDF /* Global.swift in Sources */,
+				9A9333B621DB4A4100A2B803 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
