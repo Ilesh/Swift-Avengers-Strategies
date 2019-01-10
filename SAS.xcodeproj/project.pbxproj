@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1523B7B4DA5654BAB92C117A /* Pods_SAS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404D5F6E51278D6F0D45DA77 /* Pods_SAS.framework */; };
 		9A06EB5B213A9A2D004FFEB9 /* Documentation.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9A06EB5A213A9A2D004FFEB9 /* Documentation.rtf */; };
+		9A0A7D8121E7971A000884F4 /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0A7D8021E7971A000884F4 /* TimerButton.swift */; };
 		9A2BB09B20EDE55500B553F4 /* DocumentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BB09A20EDE55500B553F4 /* DocumentsVC.swift */; };
 		9A5C4A73212D3B4A00373650 /* IPDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5C4A6E212D3B4900373650 /* IPDatePicker.xib */; };
 		9A5C4A74212D3B4A00373650 /* IPDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5C4A6F212D3B4900373650 /* IPDatePicker.swift */; };
@@ -77,6 +78,7 @@
 		404D5F6E51278D6F0D45DA77 /* Pods_SAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B55416DD2F17F3D79741E4 /* Pods-SAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAS/Pods-SAS.release.xcconfig"; sourceTree = "<group>"; };
 		9A06EB5A213A9A2D004FFEB9 /* Documentation.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Documentation.rtf; sourceTree = "<group>"; };
+		9A0A7D8021E7971A000884F4 /* TimerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
 		9A2BB09A20EDE55500B553F4 /* DocumentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsVC.swift; sourceTree = "<group>"; };
 		9A5C4A6E212D3B4900373650 /* IPDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IPDatePicker.xib; sourceTree = "<group>"; };
 		9A5C4A6F212D3B4900373650 /* IPDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPDatePicker.swift; sourceTree = "<group>"; };
@@ -159,6 +161,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A0A7D7F21E7971A000884F4 /* IPButtons */ = {
+			isa = PBXGroup;
+			children = (
+				9A0A7D8021E7971A000884F4 /* TimerButton.swift */,
+			);
+			path = IPButtons;
+			sourceTree = "<group>";
+		};
 		9A5C4A6D212D3B4900373650 /* DatePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -463,6 +473,7 @@
 		9ADC4F4020D4E95A00B85EDF /* ConstomCode */ = {
 			isa = PBXGroup;
 			children = (
+				9A0A7D7F21E7971A000884F4 /* IPButtons */,
 				9A9333AE21DB4A4100A2B803 /* Views */,
 				9A5C4A70212D3B4900373650 /* DataPicker */,
 				9A5C4A6D212D3B4900373650 /* DatePicker */,
@@ -729,6 +740,7 @@
 				9ADC4F6D20D4E95A00B85EDF /* UIColorExtensions.swift in Sources */,
 				9A9333B521DB4A4100A2B803 /* ViewDurationPicker.swift in Sources */,
 				9ADC4F7A20D4E95A00B85EDF /* CheckUpdateAppVersion.swift in Sources */,
+				9A0A7D8121E7971A000884F4 /* TimerButton.swift in Sources */,
 				9ADC4F7C20D4E95A00B85EDF /* UITabBarCustom.swift in Sources */,
 				9ADC4F6520D4E95A00B85EDF /* IPAlertviewController.swift in Sources */,
 				9ADC4F6E20D4E95A00B85EDF /* SignedIntegerExtensions.swift in Sources */,
